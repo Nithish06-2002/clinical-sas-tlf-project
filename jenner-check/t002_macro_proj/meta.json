@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_macro_proj",
+  "source_file": "table_comblete code.sas",
+  "source_blob_sha": "7b4eb471e39e641ac60f0707b7cb7283fc66f499",
+  "source_commit": "7905e7209d634de2aabaf70670f838286f73942a",
+  "notes": "The author's %proj continuous-variable summary macro (PROC SUMMARY -> TRANSPOSE -> report block). The macro body is verbatim except its internal PROC IMPORT of ADSL.xlsx is replaced by SET of a mock ADSL dataset built inline (same character columns/coding the macro's IF-THEN recodes key off). Exercised via the author's own %proj(var=weight_kg) and %proj(var=BMI) callers; renders the Weight/BMI summary table by treatment group. run_id=r_bc7906bd73344fda80272b2d5ef54ad8."
+}

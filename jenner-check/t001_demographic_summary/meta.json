@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_demographic_summary",
+  "source_file": "Table_code.sas",
+  "source_blob_sha": "b2833f233092ea12456f85cff5092e3353ead8c5",
+  "source_commit": "7905e7209d634de2aabaf70670f838286f73942a",
+  "notes": "CSR Table 14.1.2.1 subject-demographics program: PROC IMPORT -> SUMMARY -> FREQ (gender/ethnic/race) -> TRANSPOSE -> PROC REPORT. Only change from the original: the hardcoded PROC IMPORT of clinical_demographics_tlf_practice.csv is replaced by an inline DATA step carrying the first 100 subjects of that same CSV (same columns/coding), so the table runs self-contained under the shipped runner. All PROC options, formats, and the report shell are the author's unchanged. Produces the full BP3304/Placebo/overall demographics table."
+}

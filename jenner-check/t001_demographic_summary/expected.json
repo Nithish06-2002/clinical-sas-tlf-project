@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-13T03:14:00Z",
+  "_captured_run_id": "r_205a01aa8c6241528208be9a913f3de9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 100 rows from DATALINES.",
+    "NOTE: Output dataset AGE_1 has 3 observations and 9 variables.",
+    "NOTE: Wrote final (16 rows, 5 columns).",
+    "NOTE: PROC REPORT output 16 observations with 5 variables."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

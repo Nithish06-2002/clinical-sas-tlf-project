@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_sgplot_figures",
+  "source_file": "Figures.sas",
+  "source_blob_sha": "a3c354a707b9197519ecfd3b0c92f75040b49a9b",
+  "source_commit": "7905e7209d634de2aabaf70670f838286f73942a",
+  "notes": "The clean, runnable PROC SGPLOT graphics from the study's Figures.sas graphics-practice file, plotting sashelp.class as the author wrote them: two SCATTER variants (STAR / TRIANGLE markers), a SERIES, a STEP, and VBOX/HBOX box plots. Six plots, each rendered to PNG+SVG via ODS. No data substitution needed (sashelp.class ships with SAS). run_id=r_fbba7822b994484fa3e3ed8ba4a3ecb5."
+}

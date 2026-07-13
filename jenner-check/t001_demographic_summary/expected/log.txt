@@ -1,0 +1,227 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA DM
+
+NOTE: Processing inline DATALINES (100 lines)
+
+NOTE: Read 100 rows from DATALINES.
+NOTE: Wrote DM (100 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=DM
+
+NOTE: Read 100 rows from DM.
+NOTE: Wrote DM1 (100 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA DM2
+
+
+NOTE: Read 50 rows from DM1.
+NOTE: Wrote DM2 (100 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=DM2
+
+NOTE: Read 100 rows from DM2.
+NOTE: Wrote DM2 (100 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset AGE_1 has 3 observations and 9 variables.
+NOTE: PROC MEANS statement used.
+NOTE: DATA AGE_2
+
+
+NOTE: Read 3 rows from AGE_1.
+NOTE: Wrote AGE_2 (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=AGE_2
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_205a01aa8c6241528208be9a913f3de9/work/8a297a3d-980f-4ac8-ba0f-355043f23e35/age_3.avro.
+NOTE: DATA AGE_4
+
+
+NOTE: Read 4 rows from AGE_3.
+NOTE: Wrote AGE_4 (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA MOCKDATA
+
+
+NOTE: Wrote MOCKDATA (1 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA AGE
+
+
+NOTE: Read 1 rows from MOCKDATA.
+NOTE: Read 5 rows from AGE_4.
+NOTE: Wrote AGE (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset GEN_1 has 6 observations and 4 variables.
+NOTE: ODS plot written: freq_gender.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA GEN_2
+
+
+NOTE: Read 6 rows from GEN_1.
+NOTE: Wrote GEN_2 (6 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=GEN_2
+
+NOTE: Read 6 rows from GEN_2.
+NOTE: Wrote GEN_2 (6 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=GEN_2
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_205a01aa8c6241528208be9a913f3de9/work/8a297a3d-980f-4ac8-ba0f-355043f23e35/gen_3.avro.
+NOTE: DATA GEN_4
+
+
+NOTE: Read 2 rows from GEN_3.
+NOTE: Wrote GEN_4 (2 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy1
+
+
+NOTE: Wrote dummy1 (1 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA gen
+
+
+NOTE: Read 1 rows from dummy1.
+NOTE: Read 3 rows from gen_4.
+NOTE: Wrote gen (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset ETH_1 has 6 observations and 4 variables.
+NOTE: ODS plot written: freq_ethnic.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA ETH_2
+
+
+NOTE: Read 6 rows from ETH_1.
+NOTE: Wrote ETH_2 (6 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=ETH_2
+
+NOTE: Read 6 rows from ETH_2.
+NOTE: Wrote ETH_2 (6 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=ETH_2
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_205a01aa8c6241528208be9a913f3de9/work/8a297a3d-980f-4ac8-ba0f-355043f23e35/eth_3.avro.
+NOTE: DATA ETH_4
+
+
+NOTE: Read 2 rows from ETH_3.
+NOTE: Wrote ETH_4 (2 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy2
+
+
+NOTE: Wrote dummy2 (1 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA eth
+
+
+NOTE: Read 1 rows from dummy2.
+NOTE: Read 3 rows from ETH_4.
+NOTE: Wrote eth (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset race_1 has 12 observations and 4 variables.
+NOTE: ODS plot written: freq_race.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA race_2
+
+
+NOTE: Read 12 rows from race_1.
+NOTE: Wrote race_2 (12 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=race_2
+
+NOTE: Read 12 rows from race_2.
+NOTE: Wrote race_2 (12 rows, 5 columns).
+NOTE: PROC SORT statement used.
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=race_2
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_205a01aa8c6241528208be9a913f3de9/work/8a297a3d-980f-4ac8-ba0f-355043f23e35/race_3.avro.
+NOTE: DATA race_4
+
+
+NOTE: Read 4 rows from race_3.
+NOTE: Wrote race_4 (4 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy3
+
+
+NOTE: Wrote dummy3 (1 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA race
+
+
+NOTE: Read 1 rows from dummy3.
+NOTE: Read 5 rows from race_4.
+NOTE: Wrote race (5 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final
+
+
+NOTE: Read 5 rows from age.
+NOTE: Read 8 rows from gen.
+NOTE: Read 11 rows from eth.
+NOTE: Read 16 rows from race.
+NOTE: Wrote final (16 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC REPORT data=FINAL
+
+NOTE: PROC REPORT output 16 observations with 5 variables.
+
+NOTE: Read 16 rows from FINAL.
+NOTE: Wrote (console) (16 rows, 5 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
