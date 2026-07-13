@@ -1,0 +1,167 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA ADSL01
+
+NOTE: Processing inline DATALINES (30 lines)
+
+NOTE: Read 30 rows from DATALINES.
+NOTE: Wrote ADSL01 (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam4
+
+
+NOTE: Read 30 rows from ADSL01.
+NOTE: Wrote adam4 (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam5
+
+
+NOTE: Read 30 rows from adam4.
+NOTE: Wrote adam5 (60 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam02
+
+
+NOTE: Read 60 rows from adam5.
+NOTE: Wrote adam02 (60 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=adam02
+
+NOTE: Read 60 rows from adam02.
+NOTE: Wrote adam03 (60 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset wtg_1 has 3 observations and 9 variables.
+NOTE: PROC MEANS statement used.
+NOTE: DATA wtg_2
+
+
+NOTE: Read 3 rows from wtg_1.
+NOTE: Wrote wtg_2 (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=wtg_2
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_bc7906bd73344fda80272b2d5ef54ad8/work/af95a084-8634-41b2-884b-c710c7fffeff/wtg_3.avro.
+NOTE: DATA wtg_4
+
+
+NOTE: Read 4 rows from wtg_3.
+NOTE: Wrote wtg_4 (4 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy02
+
+
+NOTE: Wrote dummy02 (1 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA weight
+
+
+NOTE: Read 1 rows from dummy02.
+NOTE: Read 5 rows from wtg_4.
+NOTE: Wrote weight (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam4
+
+
+NOTE: Read 30 rows from ADSL01.
+NOTE: Wrote adam4 (30 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam5
+
+
+NOTE: Read 30 rows from adam4.
+NOTE: Wrote adam5 (60 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam02
+
+
+NOTE: Read 60 rows from adam5.
+NOTE: Wrote adam02 (60 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=adam02
+
+NOTE: Read 60 rows from adam02.
+NOTE: Wrote adam03 (60 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset bmi_1 has 3 observations and 9 variables.
+NOTE: PROC MEANS statement used.
+NOTE: DATA bmi_2
+
+
+NOTE: Read 3 rows from bmi_1.
+NOTE: Wrote bmi_2 (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Unrecognized statement 'Quit' in PROC TRANSPOSE, ignoring.
+NOTE: PROC TRANSPOSE data=bmi_2
+
+NOTE: Created 4 rows.
+NOTE: Output written to /tmp/work/r_bc7906bd73344fda80272b2d5ef54ad8/work/af95a084-8634-41b2-884b-c710c7fffeff/bmi_3.avro.
+NOTE: DATA bmi_4
+
+
+NOTE: Read 4 rows from bmi_3.
+NOTE: Wrote bmi_4 (4 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dummy03
+
+
+NOTE: Wrote dummy03 (1 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA BMI
+
+
+NOTE: Read 1 rows from dummy03.
+NOTE: Read 5 rows from bmi_4.
+NOTE: Wrote BMI (5 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final2
+
+
+NOTE: Read 5 rows from weight.
+NOTE: Read 10 rows from BMI.
+NOTE: Wrote final2 (10 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC REPORT data=final2
+
+NOTE: PROC REPORT output 10 observations with 6 variables.
+
+NOTE: Read 10 rows from final2.
+NOTE: Wrote (console) (10 rows, 6 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
